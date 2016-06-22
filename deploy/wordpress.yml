@@ -1,0 +1,29 @@
+---
+name: wordpress-aws
+director_uuid: 04d659aa-734d-409e-a41c-09222b974dd6
+
+releases:
+- {name: wordpress, version: latest}
+
+
+jobs:
+- name: webapp
+  instances: 2
+  templates:
+  - {name: webapp, release: wordpress}
+  resource_pool: wordpress
+  networks:
+  - name: private
+    range: [192.168.1.0/29]
+    default: [dns, gateway]
+   
+
+
+    
+update:
+  canaries: 1
+  canary_watch_time: 30000-240000
+  update_watch_time: 30000-600000
+  max_in_flight: 3
+
+

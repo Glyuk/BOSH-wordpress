@@ -1,0 +1,16 @@
+---
+packages:
+- name: apache2
+  version: 4fdebebaa6fcc528155afc5fabae6486131c0cee
+  fingerprint: 4fdebebaa6fcc528155afc5fabae6486131c0cee
+  sha1: 79c52b4cff7d24b3e961f18c88168eb7d6363f46
+  dependencies: []
+jobs:
+- name: webapp
+  version: cec97241116541914901adbcbfd42ea13509b7dc
+  fingerprint: cec97241116541914901adbcbfd42ea13509b7dc
+  sha1: 1e2ac285f47fbc34d7aeeb5fb6f50ada5d2ef182
+commit_hash: '00000000'
+uncommitted_changes: false
+name: wordpress-dev
+version: 0+dev.1
